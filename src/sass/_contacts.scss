@@ -8,5 +8,64 @@ text
 */
 
 .contacts {
-  @extend .text-main--low;
+  font-size: 12px;
+  line-height: 1.86;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 40px 32px;
+}
+
+// .contacts__item {
+//   margin-bottom: 24px;
+// }
+
+.contacts__box {
+  width: 218px;
+  margin-bottom: 20px;
+  background: #FFFFFF;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+}
+
+.contacts-title__place {
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  padding: 2px 20px;
+  border-radius: 4px;
+  background-color: #F0D1A5;
+}
+
+.foodtruck {
+  background-color: #C2E297;
+}
+
+.contacts-title__city {
+  letter-spacing: 0.04em;
+}
+
+.contacts__text {
+  color: $color-secondary;
+  line-height: 1.5;
+}
+
+.contacts__border {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border: 1px solid #E1E1E1;
+  border-right: none;
+  border-left: none;
+}
+
+.contacts__time {
+  color: $color-accent;
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: $color-secondary;
+  line-height: 1.5;
 }
