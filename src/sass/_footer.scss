@@ -1,0 +1,13 @@
+/*
+
+text
+@extend .text-boss--wide
+@extend .text-boss--small
+@extend .text-main--tall
+@extend .text-main--small
+
+*/
+
+.footer {
+  @extend .text-main--tall;
+}

@@ -1,0 +1,12 @@
+/*
+
+text
+@extend .text-boss--middle
+@extend .text-secondary
+@extend .text-secondary--tall
+
+*/
+
+.hero {
+  @extend .text-boss--middle;
+}

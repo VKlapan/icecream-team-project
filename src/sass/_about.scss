@@ -1,0 +1,13 @@
+/*
+
+text
+@extend .text-boss--wide
+@extend .text-boss--small
+@extend .text-advanced
+@extend .text-advanced--small
+
+*/
+
+.about {
+  @extend .text-advanced;
+}
