@@ -6,7 +6,8 @@ text
 
 */
 
-.customer-reviews {  
+.customer-reviews {
+  @extend .text-advanced--big;
   font-weight: 500;
   font-size: 12px;
   line-height: 2.55;
@@ -22,7 +23,7 @@ text
   margin-left: auto;
 }
 .customer-reviews__list {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -33,10 +34,87 @@ text
   align-items: center;
 }
 
-.customer-reviews__text {
+.customer-reviews__wrap-text {  
+  padding-top: 43px;
+  padding-right: 66px;
+  padding-bottom: 26px;
+  padding-left: 57px;
   background-color: #fafafa;
+}
+
+.customer-reviews__icon-text {
+  width: 54px;
+  height: 40px;
+}
+
+.customer-reviews__text {
+  position: relative;
+  display: block;
+  background-image: repeating-linear-gradient(0deg, #e1e1e1 0 1px, transparent 1px 31px);
+
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     left: -10px;
+    //     top: -12px;
+    //     display: flex;
+    //     width: 54px;
+    //     height: 40px;
+    //     background-image: url(/images/customer-reviews/quotes.svg);
+    //     background-position: 50%;
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+    //   }
+}
+
+
+// Decoration text dots
+.customers-reviews__wrap-span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  margin-top: 30px;
+}
+
+.customer-reviews__span {
+  position: relative;
+  width: 4px;
+  height: 4px;
+  background-color: $color-hover-dark;
+  border-radius: 50%;
+
+  &::after, &::before  {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: $color-hover-dark;
+    border-radius: 50%;
+  }
 
   &::before {
-    background-image: url('/src/images/customer-reviews/quotes.svg');
+    left: 10px;
   }
+  &::after {
+    right: 10px;
+  }
+}
+
+// Button slider
+.customer-reviews__slide-button {
+  padding: 6px 6px;
+  border: none;
+  // border-radius: 50%;
+  cursor: pointer;
+
+  &.active-slide {
+    padding: 0;
+  }
+}
+
+.customer-reviews__icon {
+  fill: red;
 }
