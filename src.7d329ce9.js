@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/ice-cream.png":[["ice-cream.e9bcba6f.png","PZuq"],"PZuq"],"./../images/ice-coffee.png":[["ice-coffee.a02ca861.png","SCfO"],"SCfO"],"./../images/milcshakes.png":[["milcshakes.efb97c52.png","GOKp"],"GOKp"],"./../images/product-circles.svg":[["product-circles.45270de8.svg","COsy"],"COsy"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/icecream-team-project/src.be4580bd.js.map
+//# sourceMappingURL=/icecream-team-project/src.7d329ce9.js.map
