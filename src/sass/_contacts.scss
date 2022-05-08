@@ -8,5 +8,128 @@ text
 */
 
 .contacts {
-  @extend .text-main--low;
+  font-size: 12px;
+  line-height: 1.86;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+
+.contacts-list {
+  margin: 0;
+  padding: 40px 32px;
+}
+
+.contacts-item:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.contacts-item:nth-child(2) {
+  margin-bottom: 8px;
+}
+
+.contacts-box {
+  margin-right: auto;
+  margin-left: auto;
+  width: 218px;
+  margin-bottom: 20px;
+  background: #FFFFFF;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+}
+
+.contacts-title__place {
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  padding: 2px 20px;
+  border-radius: 4px;
+  background-color: #F0D1A5;
+}
+
+.foodtruck {
+  background-color: #C2E297;
+}
+
+.contacts-title__city {
+  letter-spacing: 0.04em;
+}
+
+.contacts-text {
+  color: $color-secondary;
+  line-height: 1.5;
+}
+
+.contacts-list__time {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-right: 0;
+  padding-left: 0;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border: 1px solid #E1E1E1;
+  border-right: none;
+  border-left: none;
+}
+
+.contacts-item__time {
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts-time {
+  color: $color-accent;
+}
+
+.contacts-link {
+  text-decoration: none;
+  color: $color-secondary;
+  line-height: 1.5;
+}
+
+.contacts-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+    &__locations {
+      color: #ffffff;
+      background-color: #D41342;
+      border-radius: 22px;
+      border: transparent;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      padding-right: 30px;
+      padding-left: 17px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover, &:focus {
+        background-color: $color-hover-dark;
+      }
+
+    }
+
+    &__franchise {
+      color: $color-boss;
+      background-color: #ffffff;
+      border-radius: 22px;
+      border: transparent;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      padding-right: 49px;
+      padding-left: 32px;
+      cursor: pointer;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover, &:focus {
+          background-color: $color-hover-light;
+        }
+    }
+  
 }
