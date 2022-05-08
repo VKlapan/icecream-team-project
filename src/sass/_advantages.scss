@@ -9,3 +9,17 @@ text
 .advantage {
   @extend .text-main;
 }
+
+.advantages__title--hidden {
+  visibility: hidden;
+}
+
+.advantages__item--milk-bucket::before {
+  width: 33px;
+  height: 50px;
+  content: " ";
+  background-size: contain;
+  display: block;
+  background-image: url();
+  background-repeat: no-repeat;
+}
