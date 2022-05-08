@@ -6,6 +6,37 @@ text
 
 */
 
-.customer-reviews {
-  @extend .text-advanced--big;
+.customer-reviews {  
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  /* or 31px */
+  text-align: center;
+  
+  color: #000000;
+}
+
+.swiper {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+.customer-reviews__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.customer-reviews__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.customer-reviews__text {
+  background-color: #fafafa;
+
+  &::before {
+    background-image: url('/src/images/customer-reviews/quotes.svg');
+  }
 }
