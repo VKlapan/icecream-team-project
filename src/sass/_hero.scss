@@ -6,7 +6,112 @@ text
 @extend .text-secondary--tall
 
 */
+.list {
+  list-style-type: none;
+  padding: 0;
+}
 
 .hero {
+
+  position: relative;
   @extend .text-boss--middle;
+  margin-right: auto;
+  margin-left: auto;
+  height: 502px;
+  max-width: 480px;
+  background-color: #FFB8CA;
+  z-index: 0;
+
+  &__container {
+    padding-top: 194px;
+    padding-left: 20px;
+
+  }
+
+  &__decor {
+    position: absolute;
+    left: 36px;
+    top: 92px;
+    width: 345px;
+    height: 345px;
+    border-radius: 50%;
+    background-color: #FFA5BA;
+    overflow: hidden;
+    z-index: -10;
+
+  }
+
+  &__title {
+    // position: absolute;
+
+    width: 218px;
+    height: 106px;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.154;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    margin-bottom: 20px;
+
+    &--idea {
+      font-size: 48px;
+      line-height: 0.965;
+      color: #D41443;
+
+    }
+
+  }
+
+  &__button {
+    // position: absolute;
+
+    display: flex;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+
+
+
+
+
+
+    &--products {
+      width: 61.2px;
+      height: 24px;
+      color: #FFFFFF;
+      background-color: #D41443;
+      border-radius: 20px;
+      cursor: pointer;
+      border: 0;
+      margin-right: 8px;
+
+      &:hover,
+      &:focus {
+        background-color: #C7133E;
+      }
+    }
+
+    &--made {
+      width: 82.8px;
+      height: 24px;
+      background-color: #fff;
+      border-radius: 20px;
+      cursor: pointer;
+      border: 0;
+      color: #D41443;
+
+      &:hover,
+      &:focus {
+        background-color: #ECEBEB;
+      }
+
+    }
+  }
+
 }
