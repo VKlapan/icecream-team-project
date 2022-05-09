@@ -5,7 +5,10 @@ ul {
 }
 
 
-
+.burger-btn__close-icon {
+    margin-right: 20px;
+    margin-bottom: 20.26px;
+}
 
 
 .burger-btn {
@@ -21,22 +24,28 @@ ul {
     letter-spacing: .04em;
     transition: .25s cubic-bezier(.4, 0, .2, 1);
     color: #d31342;
-    width: 186px;
+    // width: 186px;
     height: 44px;
-    margin: 60px 20px 19px 21px;
-    padding-left: 48px;
-    padding-right: 48px;
+    margin: 60px 21px 19px 20px;
+    padding-left: 48.64px;
+    padding-right: 48.64px;
     background: #fff;
     border: transparent;
     border-radius: 22px;
 
+   
 
-    @media screen and (min-width: 768px) {
-        margin: 60px 34px 19px;
-        padding-left: 43.28px;
-        padding-right: 43.28px;
-    }
 
+    // @media screen and (min-width: 768px) {
+    //     margin: 60px 34px 19px;
+    //     padding-left: 43.28px;
+    //     padding-right: 43.28px;
+    // }
+
+}
+
+.burger-btn__arrow-icon {
+    margin-left: 15.77px;
 }
 
 
