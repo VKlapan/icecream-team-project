@@ -7,6 +7,12 @@ text
 
 */
 
+.contacts {
+  background-image: linear-gradient(to top,
+    #FFF5F6 85%,
+    #ffffff 85%);
+}
+
 .contacts-container {  
   @media screen and (min-width: 768px) {
     display: flex;
@@ -173,6 +179,8 @@ text
   }
 
     &__locations {
+      display: flex;
+      align-items: baseline;
       background-color: #D41342;
       color: #ffffff;
       border-radius: 22px;
@@ -187,14 +195,14 @@ text
 
       @media screen and (min-width: 768px) {
         padding-left: 30px;
-        padding-right: 52px;
+        padding-right: 35px;
         margin-bottom: 0;
         margin-right: 15px;
       }
 
       @media screen and (min-width: 1200px) {
         padding-left: 35px;
-        padding-right: 54px;
+        padding-right: 35px;
       } 
 
       &:hover, &:focus {
@@ -203,25 +211,27 @@ text
     }
 
     &__franchise {
+      display: flex;
+      align-items: baseline;
       background-color: #ffffff;
       color: $color-boss;
       border-radius: 22px;
       border: transparent;
       padding-top: 14px;
       padding-bottom: 14px;
-      padding-right: 49px;
+      padding-right: 31px;
       padding-left: 32px;
       cursor: pointer;
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
       @media screen and (min-width: 768px) {
           padding-left: 38px;
-          padding-right: 56px;
+          padding-right: 39px;
         }
 
       @media screen and (min-width: 1200px) {
         padding-left: 39px;
-        padding-right: 58px;
+        padding-right: 40px;
       } 
 
       &:hover, &:focus {
