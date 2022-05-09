@@ -1,5 +1,87 @@
-<section class="hero">
-  <div class="container">
-    <h2>Hero</h2>
+<section class="hero" id="hero">
+  <div class="hero__container container">
+    <div class="hero__main">
+      <h1 class="hero__title">
+        ice cream <br />
+        made with <span class="hero__title--idea">passion</span>
+      </h1>
+
+      <ul class="hero__button list">
+        <li>
+          <button class="hero__button--products">
+            <a class="link" href="#products">Products</a>
+          </button>
+        </li>
+        <li>
+          <button class="hero__button--made">
+            <a class="link" href="#how">How it’s made?</a>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="hero__decor"></div>
+    <div class="hero__think">
+      <p class="hero__think--text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </p>
+      <button class="hero__think--button">
+        <svg class="hero__think--icon" height="10" width="10">
+          <use href="images/icons.svg#icon-arrow-right2"></use>
+        </svg>
+      </button>
+    </div>
+    <ul class="hero__statistics list">
+      <li class="hero__statistics--number">
+        16
+        <span class="hero__statistics--point">cafes</span>
+      </li>
+      <li class="hero__statistics--number">
+        23
+        <span class="hero__statistics--point">food trucks</span>
+      </li>
+    </ul>
+
+    <picture class="hero__ice">
+      <source
+        srcset="images/hero/hero-ice-mob-min.png 1x, images/hero/hero-ice-mob@2x-min.png 2x"
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="images/hero/hero-ice-tab-min.png 1x, images/hero/hero-ice-tab@2x-min.png 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="images/hero/hero-ice-min.png 1x, images/hero/hero-ice@2x-min.png 2x"
+        media="(min-width: 1200px)"
+      />
+      <img src="images/hero/hero-ice-min.png" alt="ice" />
+    </picture>
+
+    <picture class="hero__eco">
+      <source
+        srcset="images/hero/hero-bio-eco-tab-min.png 1x, images/hero/hero-bio-eco-tab@2x-min.png 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="images/hero/hero-bio-eco-min.png 1x, images/hero/hero-bio-eco@2x-min.png 2x"
+        media="(min-width: 1200px)"
+      />
+      <img src="images/hero/hero-bio-eco-min.png" alt="milk" />
+    </picture>
+    <picture class="hero__tasty">
+      <source
+        srcset="
+          images/hero/hero-so-tasty-tab-min.png    1x,
+          images/hero/hero-so-tasty-tab@2x-min.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="images/hero/hero-so-tasty-min.png 1x, images/hero/hero-so-tasty@2x-min.png 2x"
+        media="(min-width: 1200px)"
+      />
+      <img src="images/hero/hero-so-tasty-min.png" alt="gerl east ice" />
+    </picture>
   </div>
 </section>

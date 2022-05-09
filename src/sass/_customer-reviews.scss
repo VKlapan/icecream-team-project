@@ -8,4 +8,121 @@ text
 
 .customer-reviews {
   @extend .text-advanced--big;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  /* or 31px */
+  text-align: center;
+  
+  color: #000000;
+}
+
+.swiper {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+.customer-reviews__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.customer-reviews__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.customer-reviews__wrap-text { 
+  position: relative; 
+  padding-top: 43px;
+  padding-right: 66px;
+  padding-bottom: 26px;
+  padding-left: 57px;
+  background-color: #fafafa;
+
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        min-width: 54px;
+        height: 40px;
+        background-image: url(/images/customer-reviews/quotes.svg);
+        background-position: -20px -10px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+}
+
+.customer-reviews__icon-text {
+  width: 54px;
+  height: 40px;
+  fill: red;
+}
+
+.customer-reviews__text {
+  background-image: repeating-linear-gradient(0deg, #e1e1e1 0 1px, transparent 1px 31px);
+}
+
+
+// Decoration text dots
+.customers-reviews__wrap-span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  margin-top: 30px;
+}
+
+.customer-reviews__span {
+  position: relative;
+  width: 4px;
+  height: 4px;
+  background-color: $color-hover-dark;
+  border-radius: 50%;
+
+  &::after, &::before  {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: $color-hover-dark;
+    border-radius: 50%;
+  }
+
+  &::before {
+    left: 10px;
+  }
+  &::after {
+    right: 10px;
+  }
+}
+
+// Slider
+.customer-reviews__wrap-button {
+  display: grid;
+  grid-template-columns: repeat(3, 12px);
+  grid-auto-rows: 12px;
+  grid-column-gap: 18px;
+  justify-content: center;
+
+  margin-top: 16px;
+}
+
+.customer-reviews__slide-button {
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+
+  &.active-slide {
+    background-color: #ffffff;
+    background-image: url(/images/customer-reviews/home-reviews.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
