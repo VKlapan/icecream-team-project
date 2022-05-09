@@ -159,7 +159,7 @@ text
   height: 100%; 
   border-radius: 50%; 
   // color: $color-card;  
-  background-color: $color-icon; 
+  // background-color: $color-icon; 
 }
 
 .socials__icon {
@@ -171,7 +171,7 @@ text
 
   &:hover,
   &:focus {
-    background-color: $color-boss;
+  fill: $color-boss;
   }
 }
 
