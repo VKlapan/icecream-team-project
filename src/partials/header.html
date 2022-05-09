@@ -1,6 +1,5 @@
 <header class="header">
-  <div class="container">
-    <div class="cover">
+  <div class="container bin">
       <nav class="navigation">
         <a href="" class="logo">
           <picture>
@@ -8,8 +7,16 @@
             <img src="images/logo.png" alt="logo" />
           </picture>
         </a>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="" class="nav__link">About us</a></li>
+          <li class="nav__item"><a href="" class="nav__link">How it’s made?</a></li>
+          <li class="nav__item"><a href="" class="nav__link">Our products</a></li>
+          <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
+        </ul>
       </nav>
-      <button type="button" class="burger-menu">
+      <div class="buttons">
+      <button type="button" class="burger-menu-btn">
         <picture>
           <source
             srcset="images/burger-menu-open-icon.png 1x, images/burger-menu-open-icon@2x.png 2x"
@@ -18,6 +25,15 @@
           <img src="images/burger-menu-open-icon.png" alt="menu" />
         </picture>
       </button>
-    </div>
+      <button type="button" class="buy-now__btn">
+        <span class="buy-now__txt">Buy now</span>
+          <picture class="buy-now__icon" width="4.03" height="8">
+            <source srcset="images/shared-icons/button-arrow-icon.png 1x,
+                            images/shared-icons/button-arrow-icon@2x.png 2x" media="()" />
+            <img src="images/shared-icons/button-arrow-icon.png" alt="" /> 
+          </picture>    
+      </button>
+      </div>
+    
   </div>
 </header>
