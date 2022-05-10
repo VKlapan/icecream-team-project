@@ -163,6 +163,17 @@ text
   
 }
 
+.advantages__item {
+  width: 230px;
+  @media screen and (min-width: 768px) {
+    width: 180px;
+  }
+     @media screen and (min-width: 1200px) {
+       width: 288px;
+     }
+
+
+}
 
   
 
