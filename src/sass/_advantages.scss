@@ -7,9 +7,9 @@ text
 */
 
 .advantage {
-  @extend .text-main;
   background-color: $color-background-secondary;
   padding-bottom: 80px;
+  
 
   @media screen and (min-width: 768px) and (max-width: 1200px) {
     padding-bottom: 84px;
@@ -30,10 +30,8 @@ text
     grid-template-columns: 1fr;
     gap: 32px;
     font-weight: 700;
+    letter-spacing: 1;
     
-
-    
-   
 
     @media screen and (min-width: 768px)  {
       grid-template-columns: repeat(3, 1fr);
@@ -55,11 +53,6 @@ text
       
 }
 
-
-
-.advantages__title--hidden {
-  visibility: hidden;
-}
 
 .advantages__digit--milk-bucket::before {
 
@@ -158,6 +151,7 @@ text
   }
 
     @media screen and (min-width: 1200px) {
+
       .advantages__digit {
         font-size: 58px;
         line-height: 1.13;
@@ -168,6 +162,9 @@ text
     }
   
 }
+
+
+  
 
 
 
