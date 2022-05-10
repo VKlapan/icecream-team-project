@@ -8,11 +8,15 @@ text
 
 .advantage {
   @extend .text-main;
-  background-color: $color-liht-pink;
+  background-color: $color-background-secondary;
   padding-bottom: 80px;
+
   @media screen and (min-width: 768px) and (max-width: 1200px) {
-    padding-top: 80px;
     padding-bottom: 84px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 160px;
   }
 }
 
@@ -24,20 +28,26 @@ text
     display: grid;
     grid-template-columns: 1fr;
     gap: 32px;
+    font-weight: 700;
+    
+   
 
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
+    @media screen and (min-width: 768px)  {
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 22px;
       margin: 0;
       font-size: 14px;
       line-height: 1.7;
       letter-spacing: 1.74;
+      
     }
 
         @media screen and (min-width: 1200px) {
+          grid-column-gap: 106px;
           font-size: 16px;
           line-height: 1.75;
           letter-spacing: 0.02;
+          
         }
 
         
@@ -70,6 +80,10 @@ text
          @media screen and (min-width: 768px) and (max-width: 1200px) {
            margin-bottom: 36px;
          }
+
+                    @media screen and (min-width: 1200px) {
+                      margin-bottom: 40px;
+                    }
 }
 
 .advantages__digit--apple-bucket::before {
@@ -92,6 +106,10 @@ text
         @media screen and (min-width: 768px) and (max-width: 1200px) {
           margin-bottom: 36px;
         }
+
+        @media screen and (min-width: 1200px) {
+          margin-bottom: 40px;
+        }
 }
 
 .advantages__digit--melting-heart::before {
@@ -113,6 +131,10 @@ text
         @media screen and (min-width: 768px) and (max-width: 1200px) {
           margin-bottom: 36px;
         }
+
+                 @media screen and (min-width: 1200px) {
+                   margin-bottom: 40px;
+                 }
 }
 
 .advantages__digit {
