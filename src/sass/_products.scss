@@ -131,7 +131,7 @@
   }
 }
 
-.products-cards__item-first {
+.products-cards__item--pink {
   background: #ffb8ca;
 
   &::before {
@@ -201,7 +201,7 @@
   }
 }
 
-.products-cards__item-second {
+.products-cards__item--yellow {
   background: #f0d1a5;
 
   &::before {
@@ -267,7 +267,7 @@
   }
 }
 
-.products-cards__item-third {
+.products-cards__item--green {
   background: #c2e297;
 
   &::before {
