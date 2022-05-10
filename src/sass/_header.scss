@@ -63,9 +63,7 @@ text
 }
 
 .buy-now__btn{ 
-  outline: 1px solid red;
   cursor: pointer;
-  display: none;
   background-color: $color-card;
   border-radius: 22px;
   width: 160px;
@@ -73,26 +71,22 @@ text
   justify-content: center;
   align-items: baseline;
   border: 0px;
-    &:hover,
+    padding: 11px 0px;
+    font-family: $font-main;
+    font-weight: 700;
+    color: $color-boss;
+      &:hover,
       &:focus {
-        background-color: $color-hover-light;
-      }
+          background-color: $color-hover-light;
+        }
         @media screen and (max-width: 480px) {
               display: none;}
         @media screen and (max-width: 1199px) {
-                              margin-left: 32px;}
-@media screen and (min-width: 1200px) {
-  margin-left: 0px;
-}}
-.buy-now__txt{
-  @extend .text-main--low;
-  padding: 11px 0px 11px 0px;
-  font-family: $font-main;
-  font-weight: 700;
-  color: $color-boss;
+            margin-left: 32px;}
 }
 .buy-now__icon{
   margin-left: 12px;
+  cursor: pointer;
 }
 //BUTTONS-END__________________END__________________________//
 //List_________________________LIST_________________________//
