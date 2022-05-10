@@ -6,6 +6,8 @@ text
 */
 
 .header {
+  position: absolute;
+  width: 100%;
   @extend .text-main--low;
 }
 .logo{
@@ -21,19 +23,20 @@ text
       transform: rotate(360deg);
     }
 }}
-
 .bin{
-  position: absolute;
+  width: inherit;
   margin-top: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   @media screen and (min-width: 480px) {
-      max-width: 4790px;
+      width: 480px;
     }
+         @media screen and (min-width: 768px) {
+           width: 768px;
+         }
     @media screen and (min-width: 1200px) {
-     max-width: 1200px;    
+     width: 1200px;    
       margin-top: 52px;
   }
 }
@@ -45,34 +48,42 @@ text
 .buttons{
   display: flex;
   align-items: center;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    flex-grow: 1;
+    justify-content: flex-end;
+    }
 }
 .burger-menu-btn{
   background: none;
   border: 0;
-  cursor: pointer;
+  cursor: pointer;  
   @media screen and (min-width: 1200px){
     display: none;
   }
 }
 
-.buy-now__btn{  
-  display: none;
-  @media screen and (min-width: 480px) { 
-    &:hover,
-      &:focus {
-        background-color: $color-hover-light;
-      }
-  margin-left: 32px;
+.buy-now__btn{ 
+  outline: 1px solid red;
   cursor: pointer;
+  display: none;
   background-color: $color-card;
   border-radius: 22px;
   width: 160px;
   display: flex;
   justify-content: center;
   align-items: baseline;
-  border: 0px;}
-  
-}
+  border: 0px;
+    &:hover,
+      &:focus {
+        background-color: $color-hover-light;
+      }
+        @media screen and (max-width: 480px) {
+              display: none;}
+        @media screen and (max-width: 1199px) {
+                              margin-left: 32px;}
+@media screen and (min-width: 1200px) {
+  margin-left: 0px;
+}}
 .buy-now__txt{
   @extend .text-main--low;
   padding: 11px 0px 11px 0px;
@@ -83,8 +94,8 @@ text
 .buy-now__icon{
   margin-left: 12px;
 }
-//BUTTONS-END
-//List
+//BUTTONS-END__________________END__________________________//
+//List_________________________LIST_________________________//
 .nav__list{
   display: none;
   @media screen and (min-width: 1200px) {
@@ -94,6 +105,7 @@ text
   }
 }
 .nav__link{
+  padding: 10px 0px 10px 0px;
   text-decoration: none;
   font-family: $font-main;
     font-weight: 700;
@@ -103,6 +115,7 @@ text
     &:hover,
       &:focus {
        color: $color-boss;
+      transition-duration: 1000ms;
       }
 
 }
