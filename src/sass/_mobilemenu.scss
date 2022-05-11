@@ -193,8 +193,9 @@ ul {
 
 
 .overlay-block {
-    @media screen and (max-width: 767px) {
-        position: fixed;
+  
+    @media screen and (max-width: 1200px) {
+      position: fixed;
         display: none;
         left: 0;
         top: 0;
@@ -204,15 +205,17 @@ ul {
         z-index: 9998;
     }
 
-    &.is-open {
-        display: block;
-        // opacity: 0;
-        // pointer-events: none;
-    }
+      
+
+    // &.is-open {
+    //     display: block;
+    //     // opacity: 0;
+    //     // pointer-events: none;
+    // }
 }
 
-// .overlay-block.open {
-//     display: block;
-// }
+.overlay-block.open {
+    display: block;
+}
 
 
