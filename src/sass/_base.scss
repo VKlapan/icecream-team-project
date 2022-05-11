@@ -24,6 +24,13 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 
+  @media screen and (min-width: 320px){
+    width: 320px;
+}
+  @media screen and (min-width: 480px){
+  width: 480px;
+}
+
   @media screen and (max-width: 767px) {
     max-width: 480px;
   }
