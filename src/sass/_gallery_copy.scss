@@ -1,0 +1,33 @@
+// Спрятанный заголовок
+
+
+
+.gallery__copy{
+width: 100%;
+height: 100%;
+background: linear-gradient(to bottom, #FFF5F6 40%, #fff 40%);
+margin-bottom: 80px;
+}
+
+
+.gallery__container{   
+
+}
+
+.gallery__main{
+    display: flex;
+    justify-content: center;
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+

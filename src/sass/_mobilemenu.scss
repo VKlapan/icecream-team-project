@@ -1,0 +1,221 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.burger-btn__close-icon {
+    margin-right: 20px;
+    margin-bottom: 20.26px;
+}
+
+
+.burger-btn {
+
+    @media screen and (max-width: 1199px) {
+        font-family: $font-main;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.31;
+        letter-spacing: .04em;
+        transition: .25s cubic-bezier(.4, 0, .2, 1);
+        color: $color-boss;
+        // width: 186px;
+        height: 44px;
+        margin: 60px 21px 19px 20px;
+        padding-left: 48.64px;
+        padding-right: 48.64px;
+        background: #fff;
+        border: transparent;
+        border-radius: 22px;
+
+        &:hover,
+          &:focus {
+            background-color: #ECEBEB;
+            ;
+          }
+
+       
+
+        @media screen and (min-width: 480px) and (max-width: 1199px) {
+            margin-top: 58px;
+            margin-bottom: 20px;
+            margin-left: 34px;
+        }
+    }
+
+
+    
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        // margin: 60px 34px 19px;
+        padding-left: 43.28px;
+        padding-right: 43.28px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+
+        
+    }
+
+
+        
+
+}
+
+.burger-btn__arrow-icon {
+    margin-left: 15.77px;
+}
+
+
+.mobile-menu {
+  display: none;
+}
+
+
+.burger-menu-btn {
+    @media screen and (min-width: 1200px){
+        display: none;
+    }
+}
+
+.modal-toggle__close {
+  position: absolute;
+  right: 28px;
+  top: 23px;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+
+  @media (min-width: 1199px) {
+    right: 34px;
+  }
+
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+}
+
+//
+
+.modal-toggle.is-open {
+  transform: translateX(0);
+}
+
+.modal-toggle {
+    
+    @media screen and (max-width: 480px) {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding-bottom: 50px;
+        background-color: #e17992;
+        z-index: 9999;
+        transform: translateX(100%);
+        transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    @media screen and (min-width: 480px) and ( max-width: 1199px) {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 254px;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding-bottom: 50px;
+        background-color: #e17992;
+        z-index: 9999;
+        transform: translateX(100%);
+        transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.burger-link {
+  margin: 24px;
+  text-align: center;
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $color-boss;
+    }
+}
+
+.burger__item {
+  width: 250px;
+  height: 42px;
+  border-top: 1px solid #e18298;
+}
+
+.burger__item,
+.burger__nav {
+  display: flex;
+  align-items: center;
+}
+
+.burger__nav {
+    
+
+    @media screen and (max-width: 1199px) {
+        font-family: DM Sans, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.04em;
+        color: #fff;
+        border-bottom: 1px solid #e18298;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+  
+}
+
+
+.overlay-block {
+  
+    @media screen and (max-width: 1200px) {
+      position: fixed;
+        display: none;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+        z-index: 9998;
+    }
+
+      
+
+    // &.is-open {
+    //     display: block;
+    //     // opacity: 0;
+    //     // pointer-events: none;
+    // }
+}
+
+.overlay-block.open {
+    display: block;
+}
+
+

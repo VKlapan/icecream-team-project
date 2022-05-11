@@ -8,5 +8,238 @@ text
 */
 
 .contacts {
-  @extend .text-main--low;
+  background-image: linear-gradient(to top,
+    #FFF5F6 85%,
+    #ffffff 85%);
+}
+
+.contacts-container {  
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.contacts {
+  font-size: 12px;
+  line-height: 1.86;
+  font-weight: 500;
+  letter-spacing: normal;
+  padding-bottom: 48px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    padding-bottom: 40px;
+  }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      padding-bottom: 120px;
+    }
+}
+
+.contacts-list {
+  margin: 0;
+  padding: 40px 32px; 
+  
+  @media screen and (min-width: 1200px) {
+    padding: 40px;
+  }
+
+}
+
+.contacts-item:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.contacts-item:nth-child(2) {
+  margin-bottom: 8px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
+}
+
+.contacts-box {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 280px;
+  margin-bottom: 20px;
+  background: #FFFFFF;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+
+    @media screen and (min-width: 768px) {
+      max-width: 224px;
+      margin-right: 32px;
+      margin-bottom: 40px;
+      margin-left: 0;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      max-width: 395px;
+      margin-bottom: 60px;
+    }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+}
+
+.contacts-title__place {
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  padding: 2px 20px;
+  border-radius: 4px;
+  background-color: #F0D1A5;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.foodtruck {
+  background-color: #C2E297;
+}
+
+.contacts-title__city {
+  letter-spacing: 0.04em;
+}
+
+.contacts-text {
+  color: $color-secondary;
+  line-height: 1.5;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    line-height: 1.71;
+  }
+}
+
+
+.contacts-list__time {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-right: 0;
+  padding-left: 0;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border: 1px solid #E1E1E1;
+  border-right: none;
+  border-left: none;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+.contacts-item__time {
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts-time {
+  color: $color-accent;
+}
+
+.contacts-link {
+  text-decoration: none;
+  color: $color-secondary;
+  line-height: 1.5;
+
+  @media screen and (min-width: 768px) {
+    line-height: 1.86;
+  }
+}
+
+.contacts-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;
+  }
+
+    &__locations {
+      display: flex;
+      align-items: baseline;
+      background-color: #D41342;
+      color: #ffffff;
+      border-radius: 22px;
+      border: transparent;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      padding-right: 30px;
+      padding-left: 17px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      @media screen and (min-width: 768px) {
+        padding-left: 30px;
+        padding-right: 35px;
+        margin-bottom: 0;
+        margin-right: 15px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        padding-left: 35px;
+        padding-right: 35px;
+      } 
+
+      &:hover, &:focus {
+        background-color: $color-hover-dark;
+      }
+    }
+
+    &__franchise {
+      display: flex;
+      align-items: baseline;
+      background-color: #ffffff;
+      color: $color-boss;
+      border-radius: 22px;
+      border: transparent;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      padding-right: 31px;
+      padding-left: 32px;
+      cursor: pointer;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      @media screen and (min-width: 768px) {
+          padding-left: 38px;
+          padding-right: 39px;
+        }
+
+      @media screen and (min-width: 1200px) {
+        padding-left: 39px;
+        padding-right: 40px;
+      } 
+
+      &:hover, &:focus {
+          background-color: $color-hover-light;
+        }
+    }
+}
+
+.contacts-btn__icon {
+  margin-left: 13px;
 }
