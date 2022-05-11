@@ -98,7 +98,7 @@ html, body {
         }
         @media screen and (max-width: 480px) {
               display: none;}
-        @media screen and (max-width: 1199px) {
+        @media screen and (min-width: 768px) {
             margin-left: 32px;}
 }
 .btn-txt{
