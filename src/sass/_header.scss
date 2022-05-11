@@ -11,6 +11,7 @@ text
   @extend .text-main--low;
 }
 .logo{
+  z-index: 1;
   cursor: pointer;
   animation-name: spin;
   animation-duration: 2000ms;
@@ -22,7 +23,7 @@ text
       transform:translateY(0%);
     }
 }}
-.bin{
+.header-container{
   width: inherit;
   margin-top: 8px;
   display: flex;
@@ -53,6 +54,7 @@ text
     }
 }
 .burger-menu-btn{
+  z-index: 1;
   background: none;
   border: 0;
   cursor: pointer;  
@@ -62,6 +64,7 @@ text
 }
 
 .buy-now__btn{ 
+  z-index: 1;
   cursor: pointer;
   background-color: $color-card;
   border-radius: 22px;
