@@ -1,7 +1,13 @@
 .gallery{
-    display: flex;
-    min-height: 100vh;
-    background: linear-gradient(to bottom, #FFF5F6 50%, #ffffff 50%);
+    @media screen and (min-width: 1199px) {
+      padding-bottom: 80px;
+      
+    }
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 120px;
+      
+    }
+    background: linear-gradient(to bottom, #FFF5F6 30%, #ffffff 0);
 }
 
 img {
