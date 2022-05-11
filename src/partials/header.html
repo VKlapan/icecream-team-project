@@ -1,5 +1,5 @@
 <header class="header">
-  <div class="container bin position">
+  <div class="container header-container">
       <a href="" class="logo">
           <picture>
             <source srcset="images/logo.png 1x, images/logo.png 2x" media="()" />
@@ -16,7 +16,8 @@
         </ul>
       </nav>
       <div class="buttons">
-      <button type="button" class="burger-menu-btn">
+      <button type="button" class="burger-menu-btn modal-toggle__open js-open-menu" aria-expanded="false"
+        aria-controls="mobile-menu"> 
         <picture>
           <source
             srcset="images/burger-menu-open-icon.png 1x, images/burger-menu-open-icon@2x.png 2x"
@@ -26,7 +27,7 @@
         </picture>
       </button>
       <button type="button" class="buy-now__btn">
-        <span class="buy-now__txt">Buy now</span>
+                       Buy now
           <picture class="buy-now__icon" width="4.03" height="8">
             <source srcset="images/shared-icons/button-arrow-icon.png 1x,
                             images/shared-icons/button-arrow-icon@2x.png 2x" media="()" />

@@ -11,19 +11,19 @@ text
   @extend .text-main--low;
 }
 .logo{
+  z-index: 1;
   cursor: pointer;
   animation-name: spin;
   animation-duration: 2000ms;
 @keyframes spin {
     0% {
-      transform: rotate(0deg);
+      transform: translateY(-250%);
     }
-
     100% {
-      transform: rotate(360deg);
+      transform:translateY(0%);
     }
 }}
-.bin{
+.header-container{
   width: inherit;
   margin-top: 8px;
   display: flex;
@@ -54,6 +54,7 @@ text
     }
 }
 .burger-menu-btn{
+  z-index: 1;
   background: none;
   border: 0;
   cursor: pointer;  
@@ -63,9 +64,8 @@ text
 }
 
 .buy-now__btn{ 
-  outline: 1px solid red;
+  z-index: 1;
   cursor: pointer;
-  display: none;
   background-color: $color-card;
   border-radius: 22px;
   width: 160px;
@@ -73,26 +73,22 @@ text
   justify-content: center;
   align-items: baseline;
   border: 0px;
-    &:hover,
+    padding: 11px 0px;
+    font-family: $font-main;
+    font-weight: 700;
+    color: $color-boss;
+      &:hover,
       &:focus {
-        background-color: $color-hover-light;
-      }
+          background-color: $color-hover-light;
+        }
         @media screen and (max-width: 480px) {
               display: none;}
         @media screen and (max-width: 1199px) {
-                              margin-left: 32px;}
-@media screen and (min-width: 1200px) {
-  margin-left: 0px;
-}}
-.buy-now__txt{
-  @extend .text-main--low;
-  padding: 11px 0px 11px 0px;
-  font-family: $font-main;
-  font-weight: 700;
-  color: $color-boss;
+            margin-left: 32px;}
 }
 .buy-now__icon{
   margin-left: 12px;
+  cursor: pointer;
 }
 //BUTTONS-END__________________END__________________________//
 //List_________________________LIST_________________________//
@@ -132,3 +128,38 @@ text
     flex-grow: 1;
     }
 }
+
+
+
+
+// .modal-toggle__open {
+
+//   display: flex;
+//   margin-left: auto;
+//   justify-content: space-between;
+//   padding: 0;
+//   border: none;
+//   background-color: inherit;
+//   cursor: pointer;
+
+//   @media (min-width:1280px) {
+//     display: none;
+//   }
+
+// }
+
+
+// .overlay-block {
+//   position: fixed;
+//   z-index: 9998;
+//   background-color: rgba(0, 0, 0, .75);
+//   display: none;
+//   left: 0;
+//   top: 0;
+//   width: 100%;
+//   height: 100vh;
+
+//   &.open {
+//     display: block;
+//   }
+// }  

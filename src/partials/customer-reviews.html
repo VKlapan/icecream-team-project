@@ -1,54 +1,125 @@
 <section class="customer-reviews">
   <div class="container">
     <h2 class="visually-hidden">Customer Reviews</h2>
+    <!-- Основной контент секции -->
     <div class="swiper">
-      <ul class="customer-reviews__list">
-        <li class="customer-reviews__item">
-          <img src="images/customer-reviews/reviews-user-photo0.jpg" alt="User photo" />
+      <ul class="customer-reviews__list swiper-list">
+        <!-- First user -->
+        <li class="customer-reviews__item swiper-item">
+          <!-- Обертка для аватара -->
+          <div class="customer-reviews__wrap-img">
+            <picture>
+              <source
+                srcset="
+                  images/customer-reviews/customer-portret01.jpg    1x,
+                  images/customer-reviews/customer-portret01@2x.jpg 2x
+                "
+              />
+              <img
+                src="images/customer-reviews/customer-portret01.jpg"
+                alt="User photo"
+                width="85"
+                height="85"
+              />
+            </picture>
+          </div>
+          <!-- Обертка текста -->
           <div class="customer-reviews__wrap-text">
             <p class="customer-reviews__text">
               Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
               hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
             </p>
           </div>
-
+          <!-- Decoration text dots -->
           <div class="customers-reviews__wrap-span">
             <span class="customer-reviews__span"></span>
           </div>
-          <span>Emily, Los Angeles</span>
+          <!-- Имя пользователя -->
+          <div class="customers-reviews__wrap-name">
+            <span class="customers-reviews__name">Emily, Los Angeles</span>
+          </div>
         </li>
 
-        <!-- <li class="customer-reviews__item">
-          <img src="" alt="User photo" />
+        <!-- Second user -->
+        <li class="customer-reviews__item swiper-item">
+          <!-- Обертка для аватара -->
+          <div class="customer-reviews__wrap-img">
+            <picture>
+              <source
+                srcset="
+                  images/customer-reviews/customer-portret02.jpg    1x,
+                  images/customer-reviews/customer-portret02@2x.jpg 2x
+                "
+              />
+              <img
+                src="images/customer-reviews/customer-portret02.jpg"
+                alt="User photo"
+                width="85"
+                height="85"
+              />
+            </picture>
+          </div>
+          <!-- Обертка текста -->
           <div class="customer-reviews__wrap-text">
             <p class="customer-reviews__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quasi harum
-              aspernatur repellendus sit ab.
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
             </p>
           </div>
-
-          <span>Inga, Chicago</span>
+          <!-- Decoration text dots -->
+          <div class="customers-reviews__wrap-span">
+            <span class="customer-reviews__span"></span>
+          </div>
+          <!-- Имя пользователя -->
+          <div class="customers-reviews__wrap-name">
+            <span class="customers-reviews__name">Inga, Chicago</span>
+          </div>
         </li>
 
-        <li class="customer-reviews__item">
-          <img src="" alt="User photo" />
+        <!-- Third user -->
+        <li class="customer-reviews__item swiper-item">
+          <!-- Обертка для аватара -->
+          <div class="customer-reviews__wrap-img">
+            <picture>
+              <source
+                srcset="
+                  images/customer-reviews/customer-portret03.jpg    1x,
+                  images/customer-reviews/customer-portret03@2x.jpg 2x
+                "
+              />
+              <img
+                src="images/customer-reviews/customer-portret03.jpg"
+                alt="User photo"
+                width="85"
+                height="85"
+              />
+            </picture>
+          </div>
+          <!-- Обертка текста -->
           <div class="customer-reviews__wrap-text">
             <p class="customer-reviews__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque officiis eius vel
-              voluptas numquam officia ab fugit magni blanditiis consectetur libero, ipsum
-              temporibus quo aperiam.
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
             </p>
           </div>
-
-          <span>Anna, New York</span>
-        </li> -->
+          <!-- Decoration text dots -->
+          <div class="customers-reviews__wrap-span">
+            <span class="customer-reviews__span"></span>
+          </div>
+          <!-- Имя пользователя -->
+          <div class="customers-reviews__wrap-name">
+            <span class="customers-reviews__name">Anna, New York</span>
+          </div>
+        </li>
       </ul>
 
       <!-- Slider -->
-      <div class="customer-reviews__wrap-button">
-        <button class="customer-reviews__slide-button active-slide"></button>
-        <button class="customer-reviews__slide-button"></button>
-        <button class="customer-reviews__slide-button"></button>
+      <div class="customer-reviews__slider">
+        <span
+          class=".customer-reviews__slider--switch .customer-reviews__slider--switch-active"
+        ></span>
+        <span class=".customer-reviews__slider--switch"></span>
+        <span class=".customer-reviews__slider--switch"></span>
       </div>
     </div>
   </div>
