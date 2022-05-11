@@ -92,24 +92,25 @@ body {
   justify-content: center;
   align-items: baseline;
   border: 0px;
+
   padding: 11px 0px;
-  font-family: $font-main;
-  font-weight: 700;
-  color: $color-boss;
-  transition-duration: 1000ms;
-  &:hover,
-  &:focus {
-    background-color: $color-hover-light;
-  }
-  @media screen and (max-width: 480px) {
-    display: none;
-  }
-  @media screen and (max-width: 1199px) {
-    margin-left: 32px;
-  }
+    font-family: $font-main;
+    font-weight: 700;
+    color: $color-boss;
+    transition-duration: 1000ms;
+      &:hover,
+      &:focus {
+          background-color: $color-hover-light;
+        }
+        @media screen and (max-width: 480px) {
+              display: none;}
+        @media screen and (min-width: 768px) {
+            margin-left: 32px;}
+
 }
 .btn-txt {
   margin-right: 12px;
+
 }
 //BUTTONS-END__________________END__________________________//
 //List_________________________LIST_________________________//
