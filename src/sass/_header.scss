@@ -17,7 +17,7 @@ html, body {
   z-index: 1;
   cursor: pointer;
   animation-name: spin;
-  animation-duration: 2500ms;
+  animation-duration: 1000ms;
   transition: opacity 0.5s, top 0.9s;
   position: relative;
   top: 0;
@@ -91,7 +91,7 @@ html, body {
     font-family: $font-main;
     font-weight: 700;
     color: $color-boss;
-    transition-duration: 500ms;
+    transition-duration: 1000ms;
       &:hover,
       &:focus {
           background-color: $color-hover-light;
@@ -101,10 +101,8 @@ html, body {
         @media screen and (max-width: 1199px) {
             margin-left: 32px;}
 }
-.buy-now__icon{
-  margin-left: 12px;
-  cursor: pointer;
-}
+.btn-txt{
+  margin-right: 12px;}
 //BUTTONS-END__________________END__________________________//
 //List_________________________LIST_________________________//
 .nav__list{
@@ -119,6 +117,7 @@ html, body {
   padding: 10px 0px 10px 0px;
   text-decoration: none;
   font-family: $font-main;
+  transition-duration: 1000ms;
     font-weight: 700;
     font-size: 16px;
     @extend .text-main--low;
@@ -126,7 +125,6 @@ html, body {
     &:hover,
       &:focus {
        color: $color-boss;
-      transition-duration: 1000ms;
       }
 
 }
