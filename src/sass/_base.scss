@@ -36,16 +36,17 @@ img {
   padding-right: 20px;
   margin: 0 auto;
 
-@media screen and (min-width: 320px){
-    width: 320px;
-}
-  @media screen and (min-width: 480px){
-  width: 480px;
-}
+  // @media screen and (min-width: 320px){
+  //     width: 320px;
+  // }
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 
   @media screen and (max-width: 767px) {
     max-width: 480px;
-}
+  }
 
   @media screen and (min-width: 768px) {
     padding-left: 32px;
@@ -66,7 +67,6 @@ img {
   font-size: 58px;
   line-height: 66px;
   letter-spacing: 0.04em;
-  
 
   &--wide {
     letter-spacing: 0.06em;
