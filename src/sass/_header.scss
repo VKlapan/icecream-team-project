@@ -16,6 +16,7 @@ body {
   z-index: 50;
 }
 .logo {
+  margin-right: auto;
   cursor: pointer;
   animation-name: spin;
   animation-duration: 1000ms;
@@ -78,7 +79,6 @@ body {
 }
 
 .burger-menu-btn{
-  
   background: none;
   border: 0;
   cursor: pointer;
@@ -112,6 +112,9 @@ body {
   @media screen and (min-width: 768px) {
     margin-left: 32px;
   }
+ @media screen and (min-width: 1200px) {
+    margin-left: 0px;
+        }
 }
 .btn-txt {
   margin-right: 12px;
@@ -122,7 +125,6 @@ body {
   display: none;
   @media screen and (min-width: 1200px) {
     display: flex;
-    margin: auto;
   }
 }
 .nav__link {
@@ -147,7 +149,7 @@ body {
 .navigation {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   @media screen and (min-width: 1200px) {
     flex-grow: 1;
   }
