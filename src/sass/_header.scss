@@ -55,8 +55,8 @@ body {
   @media screen and (min-width: 768px) {
     width: 768px;
   }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
     margin-top: 52px;
   }
 }
@@ -68,25 +68,25 @@ body {
 .buttons {
   display: flex;
   align-items: center;
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (min-width: 480px) and (max-width: 1279px) {
     flex-grow: 1;
     justify-content: flex-end;
   }
 }
 
-.buttons .burger-menu-btn[aria-expanded="true"] {
+.buttons .burger-menu-btn[aria-expanded='true'] {
   display: none;
 }
 
-.burger-menu-btn{
+.burger-menu-btn {
   background: none;
   border: 0;
   cursor: pointer;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
 }
-button.burger-menu-btn[aria-expanded="true"] {
+button.burger-menu-btn[aria-expanded='true'] {
   display: none;
   & + button {
     display: none;
@@ -95,8 +95,6 @@ button.burger-menu-btn[aria-expanded="true"] {
 .overlay-block {
   pointer-events: none;
 }
-
-
 
 .buy-now__btn {
   cursor: pointer;
@@ -123,9 +121,9 @@ button.burger-menu-btn[aria-expanded="true"] {
   @media screen and (min-width: 768px) {
     margin-left: 32px;
   }
- @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-left: 0px;
-        }
+  }
 }
 .btn-txt {
   margin-right: 12px;
@@ -134,7 +132,7 @@ button.burger-menu-btn[aria-expanded="true"] {
 //List_________________________LIST_________________________//
 .nav__list {
   display: none;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: flex;
   }
 }
@@ -161,7 +159,7 @@ button.burger-menu-btn[aria-expanded="true"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     flex-grow: 1;
   }
 }
