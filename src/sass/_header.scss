@@ -86,6 +86,17 @@ body {
     display: none;
   }
 }
+button.burger-menu-btn[aria-expanded="true"] {
+  display: none;
+  & + button {
+    display: none;
+  }
+}
+.overlay-block {
+  pointer-events: none;
+}
+
+
 
 .buy-now__btn {
   cursor: pointer;

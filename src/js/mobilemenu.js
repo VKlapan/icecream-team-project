@@ -48,7 +48,7 @@ jQuery(document).ready(function ($) {
     $('.overlay-block').addClass('open');
     $('body').css('overflow', 'hidden');
   });
-  $('.modal-toggle__close').on('click', function () {
+  $('.modal-toggle__close').on('click', function (evt) {
     $('.overlay-block').removeClass('open');
   });
 
