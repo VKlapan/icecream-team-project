@@ -67,6 +67,10 @@ html, body {
     justify-content: flex-end;
     }
 }
+.buttons .burger-menu-btn[aria-expanded="true"] {
+  display: none;
+}
+
 .burger-menu-btn{
   z-index: 1;
   background: none;
