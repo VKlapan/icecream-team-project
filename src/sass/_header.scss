@@ -80,6 +80,15 @@ body {
     display: none;
   }
 }
+button.burger-menu-btn[aria-expanded="true"] {
+  display: none;
+  & + button {
+    display: none;
+    
+  }
+}
+
+
 
 .buy-now__btn {
   z-index: 1;
