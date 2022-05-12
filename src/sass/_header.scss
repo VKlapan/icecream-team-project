@@ -4,7 +4,8 @@ text
 @extend .text-main--low
 
 */
-html, body {
+html,
+body {
   scroll-behavior: smooth;
 }
 
@@ -12,9 +13,9 @@ html, body {
   position: absolute;
   width: 100%;
   @extend .text-main--low;
+  z-index: 50;
 }
-.logo{
-  z-index: 1;
+.logo {
   cursor: pointer;
   animation-name: spin;
   animation-duration: 1000ms;
@@ -23,12 +24,12 @@ html, body {
   top: 0;
   opacity: 1;
   @keyframes spin {
-      0% {
-        transform: translateY(-250%);
-      }
-      100% {
-        transform:translateY(0%);
-      }
+    0% {
+      transform: translateY(-250%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
   }
   &:hover {
     top: -5px;
@@ -36,53 +37,57 @@ html, body {
   }
 }
 
+.logo__img {
+  width: 200px;
+  height: 50px;
+}
 
-.header-container{
+.header-container {
   width: inherit;
   margin-top: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   @media screen and (min-width: 480px) {
-      width: 480px;
-    }
-         @media screen and (min-width: 768px) {
-           width: 768px;
-         }
-    @media screen and (min-width: 1200px) {
-     width: 1200px;    
-      margin-top: 52px;
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    margin-top: 52px;
   }
 }
-.menu{
+.menu {
   display: flex;
   align-items: center;
 }
 //BUTTONS
-.buttons{
+.buttons {
   display: flex;
   align-items: center;
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     flex-grow: 1;
     justify-content: flex-end;
-    }
+  }
 }
+
 .buttons .burger-menu-btn[aria-expanded="true"] {
   display: none;
 }
 
 .burger-menu-btn{
-  z-index: 1;
+  
   background: none;
   border: 0;
-  cursor: pointer;  
-  @media screen and (min-width: 1200px){
+  cursor: pointer;
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }
 
-.buy-now__btn{ 
-  z-index: 1;
+.buy-now__btn {
   cursor: pointer;
   background-color: $color-card;
   border-radius: 22px;
@@ -91,63 +96,62 @@ html, body {
   justify-content: center;
   align-items: baseline;
   border: 0px;
-    padding: 11px 0px;
-    font-family: $font-main;
-    font-weight: 700;
-    color: $color-boss;
-    transition-duration: 1000ms;
-      &:hover,
-      &:focus {
-          background-color: $color-hover-light;
-        }
-        @media screen and (max-width: 480px) {
-              display: none;}
-        @media screen and (min-width: 768px) {
-            margin-left: 32px;}
-}
-.btn-txt{
-  margin-right: 12px;}
-//BUTTONS-END__________________END__________________________//
-//List_________________________LIST_________________________//
-.nav__list{
-  display: none;
-  @media screen and (min-width: 1200px) {
-  z-index: 1;
-  display: flex;
-  margin: auto;
+
+  padding: 11px 0px;
+  font-family: $font-main;
+  font-weight: 700;
+  color: $color-boss;
+  transition-duration: 1000ms;
+  &:hover,
+  &:focus {
+    background-color: $color-hover-light;
+  }
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 32px;
   }
 }
-.nav__link{
+.btn-txt {
+  margin-right: 12px;
+}
+//BUTTONS-END__________________END__________________________//
+//List_________________________LIST_________________________//
+.nav__list {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin: auto;
+  }
+}
+.nav__link {
   padding: 10px 0px 10px 0px;
   text-decoration: none;
   font-family: $font-main;
   transition-duration: 1000ms;
-    font-weight: 700;
-    font-size: 16px;
-    @extend .text-main--low;
-    color: $color-card;
-    &:hover,
-      &:focus {
-       color: $color-boss;
-      }
-
+  font-weight: 700;
+  font-size: 16px;
+  @extend .text-main--low;
+  color: $color-card;
+  &:hover,
+  &:focus {
+    color: $color-boss;
+  }
 }
-.nav__item{
-  &:not(:first-child){
+.nav__item {
+  &:not(:first-child) {
     margin-left: 35px;
   }
 }
-.navigation{
+.navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
   @media screen and (min-width: 1200px) {
     flex-grow: 1;
-    }
+  }
 }
-
-
-
 
 // .modal-toggle__open {
 
@@ -165,7 +169,6 @@ html, body {
 
 // }
 
-
 // .overlay-block {
 //   position: fixed;
 //   z-index: 9998;
@@ -179,4 +182,4 @@ html, body {
 //   &.open {
 //     display: block;
 //   }
-// }  
+// }
