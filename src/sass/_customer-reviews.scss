@@ -48,7 +48,10 @@ text
   margin-right: auto;
   padding-top: 43px;
   padding-bottom: 26px;
-  //max-width: 280px;
+
+  @media screen and (max-width: 767px) {
+    max-width: 280px;
+  }
 
   position: relative;
 
