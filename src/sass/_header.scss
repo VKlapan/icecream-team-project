@@ -13,9 +13,9 @@ body {
   position: absolute;
   width: 100%;
   @extend .text-main--low;
+  z-index: 50;
 }
 .logo {
-  z-index: 1;
   cursor: pointer;
   animation-name: spin;
   animation-duration: 1000ms;
@@ -73,7 +73,6 @@ body {
   }
 }
 .burger-menu-btn {
-  z-index: 1;
   background: none;
   border: 0;
   cursor: pointer;
@@ -94,23 +93,23 @@ body {
   border: 0px;
 
   padding: 11px 0px;
-    font-family: $font-main;
-    font-weight: 700;
-    color: $color-boss;
-    transition-duration: 1000ms;
-      &:hover,
-      &:focus {
-          background-color: $color-hover-light;
-        }
-        @media screen and (max-width: 480px) {
-              display: none;}
-        @media screen and (min-width: 768px) {
-            margin-left: 32px;}
-
+  font-family: $font-main;
+  font-weight: 700;
+  color: $color-boss;
+  transition-duration: 1000ms;
+  &:hover,
+  &:focus {
+    background-color: $color-hover-light;
+  }
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 32px;
+  }
 }
 .btn-txt {
   margin-right: 12px;
-
 }
 //BUTTONS-END__________________END__________________________//
 //List_________________________LIST_________________________//
