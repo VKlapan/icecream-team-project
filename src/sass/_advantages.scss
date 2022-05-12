@@ -6,6 +6,10 @@ text
 
 */
 
+.visually-hidden {
+  visibility: hidden;
+}
+
 .advantage {
   background-color: $color-background-secondary;
   padding-bottom: 80px;
