@@ -1,8 +1,8 @@
 .gallery {
-  @media screen and (min-width: 1199px) {
+  @media screen and (max-width: 1279px) {
     padding-bottom: 80px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-bottom: 120px;
   }
   background: linear-gradient(to bottom, #fff5f6 30%, #ffffff 0);
