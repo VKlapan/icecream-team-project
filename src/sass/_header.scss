@@ -150,6 +150,7 @@ button.burger-menu-btn[aria-expanded='true'] {
   @extend .text-main--low;
   color: $color-card;
   &:hover,
+  &.current,
   &:focus {
     color: $color-boss;
   }
