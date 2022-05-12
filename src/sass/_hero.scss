@@ -9,21 +9,16 @@ text
 }
 */
 
-.hero {
-  background-color: #ffb8ca;
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1200px) {
-  }
-
+.hero {  
+  background-color: #FFB8CA;
+  
   &__container {
-    position: relative;
-    height: 502px;
-    max-width: 480px;
-    z-index: 0;
-    overflow: hidden;
-
+  position: relative;
+  height: 502px;
+  max-width: 480px;
+  z-index:40;
+  overflow: hidden;
+ 
     @media screen and (min-width: 768px) {
       max-width: 768px;
       height: 416px;
@@ -87,15 +82,12 @@ text
         height: 26px;
       }
     }
+
     &--icon {
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
       fill: #d41443;
       @media screen and (min-width: 768px) {
         width: 6px;
       }
-
       @media screen and (min-width: 1200px) {
         width: 10px;
       }
@@ -418,3 +410,312 @@ text
     }
   }
 }
+
+}
+
+.backgrop-hero {
+display: none;
+@media screen and (min-width: 768px) {
+  display: block;
+   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 184, 202, 0.3);
+  opacity: 1;
+  transition: opacity 250ms ease, visibility 250ms ease;
+  z-index: 100;
+  overflow-y: scroll;
+} }
+
+.backgrop-hero.is-hidden-hero {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+
+}
+
+.backgrop-hero.is-hidden-hero .modal-hero {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(200%);
+  
+
+}
+
+
+.modal-hero {
+  display: none;
+
+  @media screen and (min-width:768px){
+    display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(100%);
+  width: 100%;
+  height: 100%;
+  max-width: 450px;
+  max-height: 609px;
+  background-color: rgba(255, 245, 246, 1);
+  background-image: url(../images/about/about-bg.png);
+    background-repeat: no-repeat;
+      background-position: bottom right;
+      background-size: cover;
+  box-shadow: 0px 1px 3px rgba(255, 184, 202, 0.4),
+    0px 1px 1px rgba(255, 184, 202, 0.5),
+    0px 2px 1px rgba(255, 184, 202, 0.2);
+  border-radius: 30px;
+  opacity: 1;
+  transition: transform 250ms ease, opacity 250ms ease;
+  z-index: 200;
+
+
+  
+  }
+
+}
+
+.hero-btn__close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(212, 20, 67, 0.1);
+  background-color: rgba(255, 184, 202, 1);
+  transition: fill 250ms ease;
+  fill: #D41443;
+
+  &:focus,
+  &:hover {
+    fill: #FFFFFF;
+  }
+}
+
+.modal-form{
+  margin-bottom: 30px;
+}
+
+.modal-size{
+ font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #D41443;
+  margin-bottom: 10px;
+  
+
+}
+.modal-type{
+  font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    align-items: center;
+    text-align: center;
+    color: #D41443;
+}
+
+.form-type{
+  margin-bottom: 5px;
+}
+.form-type input[type=radio] {
+  display: none;
+}
+.form-type label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 0;
+  line-height: 18px;
+}
+.form-type label:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #C7133E;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background-color:  #ffb8ca53;
+  transition: background-color 250ms ease;
+ }
+.form-type input[type=radio]:checked+label:before {
+  background-color: #C7133E;
+}
+
+.modal-select{
+  display: block;
+  width: 150px;
+  height: 30px;
+  font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    align-items: center;
+    text-align: center;
+    color: #D41443;
+    border: 1px solid #D41443;
+    border-radius: 10px;
+    &:focus,
+    &:hover{
+      outline: none;
+      border: 1px solid #D41443;
+    }
+
+}
+
+
+.form-hero {
+display: block;
+width: 100%;
+padding: 40px;
+
+
+  &__title {
+    font-family: 'Titan One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 1;
+      text-align: center;
+      text-transform: uppercase;
+        color: #D41443;
+        margin-bottom: 20px;
+  }
+
+
+
+
+
+
+  .form__comment {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+
+   .form__area {
+    width: 100%;
+    height: 90px;
+    border: 1px solid rgba(212, 20, 67, 0.2);
+    box-sizing: border-box;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    padding: 12px 16px;
+    transition: border-color 250ms ease;
+    resize: none;
+    color: rgba(212, 20, 67, 1);
+
+    &:focus {
+      border-color: rgba(212, 20, 67, 1);
+    }
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 1.17;
+      letter-spacing: 0.01em;
+      color: rgba(212, 20, 67, 0.5);
+    }
+  }
+}
+
+.modal-toppings {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  align-items: center;
+  text-align: center;
+  color: #D41443;
+
+}
+
+.modal-field{
+  display: flex;
+  justify-content: space-between
+}
+
+
+.form-toppings {
+  margin-bottom: 5px;
+}
+
+.form-toppings input[type=checkbox] {
+    appearance: none;
+    position: absolute;
+}
+
+.form-toppings label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 20px;
+  margin-right: 0;
+  line-height: 18px;
+}
+
+.form-toppings label:before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  border: 1px solid #C7133E;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background-color: #ffb8ca53;
+  transition: background-color 250ms ease, border 250ms ease, background-image 250ms ease, border-color 250ms ease;
+}
+
+.form-toppings input[type=checkbox]:checked+label:before {
+  background-color: #C7133E;
+  border: none;
+  background-image: url(../images/icon_check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+ .ice__btn{
+    display: block;
+    font-family: inherit;
+    cursor: pointer;
+    background: rgba(212, 20, 67, 0.9);
+    box-shadow: 0px 4px 4px rgba(212, 20, 67, 0.2);
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    border: none;
+    transition: background-color 250ms ease;
+
+    &:hover,
+    &:focus {
+      background-color: rgba(212, 20, 67, 1);
+    }
+
+  }
