@@ -48,44 +48,46 @@ text
   margin-right: auto;
   padding-top: 43px;
   padding-bottom: 26px;
-  width: 100%;
+  max-width: 280px;
 
   position: relative;
 
   background-color: #fafafa;
 
   &::before {
-        content: '';
-        width: 54px;
-        height: 40px;
-    
-        position: absolute;
-        left: 60px;
-        top: 27px;
-    
-        background-image: url(../images/customer-reviews/customer-reviews-quotes-icon.png);
-    
-        @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-          background-image: url(../images/customer-reviews/customer-reviews-quotes-icon@2x.png);
-        }
-    
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    
-    @media screen and (min-width: 768px) {
-      left: 40px;
-      top: 20px;
+      content: '';
+      width: 54px;
+      height: 40px;
+  
+      position: absolute;
+      left: 50px;
+      top: 27px;
+  
+      z-index: 1;
+  
+      background-image: url(../images/customer-reviews/customer-reviews-quotes-icon.png);
+  
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(../images/customer-reviews/customer-reviews-quotes-icon@2x.png);
+      }
+  
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+  
+      @media screen and (min-width: 768px) {
+        left: 40px;
+        top: 20px;
+      }
+  
+      @media screen and (min-width: 1200px) {
+        left: 105px;
+        top: 25x;
+      }
     }
-    
-    @media screen and (min-width: 1200px) {
-      left: 105px;
-      top: 25x;
-    }
-  }
  
   @media screen and (min-width: 768px) {
     padding-top: 37px;
@@ -104,9 +106,10 @@ text
   padding-left: 5px;
   max-width: 180px;
 
-  background-color: #fafafa;
+  background-color: transparent;
   background-image: repeating-linear-gradient(to top, $color-border 0 1px, transparent 1px 31px);
 
+  z-index: 2;
   
   @media screen and (min-width: 768px) {
     padding-right: 40px;
