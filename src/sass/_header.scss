@@ -72,7 +72,13 @@ body {
     justify-content: flex-end;
   }
 }
-.burger-menu-btn {
+
+.buttons .burger-menu-btn[aria-expanded="true"] {
+  display: none;
+}
+
+.burger-menu-btn{
+  
   background: none;
   border: 0;
   cursor: pointer;
@@ -82,7 +88,6 @@ body {
 }
 
 .buy-now__btn {
-  z-index: 1;
   cursor: pointer;
   background-color: $color-card;
   border-radius: 22px;
@@ -116,7 +121,6 @@ body {
 .nav__list {
   display: none;
   @media screen and (min-width: 1200px) {
-    z-index: 1;
     display: flex;
     margin: auto;
   }
