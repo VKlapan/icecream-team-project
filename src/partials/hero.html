@@ -8,14 +8,14 @@
 
       <ul class="hero__button list">
         <li>
-          <button class="hero__button--products">
-            <a class="link" href="#products">Products</a>
-          </button>
+          <form action="#products">
+            <button class="hero__button--products" name="button">Products</button>
+          </form>
         </li>
         <li>
-          <button class="hero__button--made">
-            <a class="link" href="#about">How it’s made?</a>
-          </button>
+          <form action="#about">
+            <button class="hero__button--made" name="button">How it’s made?</button>
+          </form>
         </li>
       </ul>
     </div>
@@ -42,75 +42,76 @@
 
         <form class="form-hero">
           <h3 class="form-hero__title">What ice cream?</h3>
-         <div class="modal-form">
-          <label class="modal-size" for="size">Size</label>
-          <select class="modal-select" id="size" name="size">
-            <option class="modal-size__text" value="small">Small</option>
-            <option class="modal-size__text" value="medium">Medium</option>
-            <option class="modal-size__text" value="large" selected>Large</option>
-            <option class="modal-size__text" value="extralarge">ExtraLarge</option>
-          </select></div>
+          <div class="modal-form">
+            <label class="modal-size" for="size">Size</label>
+            <select class="modal-select" id="size" name="size">
+              <option class="modal-size__text" value="small">Small</option>
+              <option class="modal-size__text" value="medium">Medium</option>
+              <option class="modal-size__text" value="large" selected>Large</option>
+              <option class="modal-size__text" value="extralarge">ExtraLarge</option>
+            </select>
+          </div>
 
-<div class="modal-form"><p class="modal-size">Choose a flavor</p>
-  <div class="modal-field">
-  <div class="form-type">  
-    <input id="flavor1" type="radio" name="type" value="chokolate"/>
-     <label for="flavor1" class="modal-type">Chokolate</label>
-  </div>
-<div class="form-type">  
-    <input id="flavor2" type="radio" name="type" value="vanilla"/>
-     <label for="flavor2" class="modal-type"><span class="modal-type__text">Vanilla</span>
-</label>
-  </div>
-<div class="form-type">  
-    <input id="flavor3" type="radio" name="type" value="fruity"/>
-     <label for="flavor3" class="modal-type"><span class="modal-type__text">Fruity</span>
-</label>
-  </div>
-</div>
-      </div>
+          <div class="modal-form">
+            <p class="modal-size">Choose a flavor</p>
+            <div class="modal-field">
+              <div class="form-type">
+                <input id="flavor1" type="radio" name="type" value="chokolate" />
+                <label for="flavor1" class="modal-type">Chokolate</label>
+              </div>
+              <div class="form-type">
+                <input id="flavor2" type="radio" name="type" value="vanilla" />
+                <label for="flavor2" class="modal-type"
+                  ><span class="modal-type__text">Vanilla</span>
+                </label>
+              </div>
+              <div class="form-type">
+                <input id="flavor3" type="radio" name="type" value="fruity" />
+                <label for="flavor3" class="modal-type"
+                  ><span class="modal-type__text">Fruity</span>
+                </label>
+              </div>
+            </div>
+          </div>
 
-<div class="modal-form"><p class="modal-size">Toppings</p>
-  <div class="modal-field">
-  
- 
-  <div class="form-toppings">  
-    <input id="toppings1" type="checkbox" name="toppings" value="chokolate"/>
-     <label for="toppings1" class="modal-toppings">Chokolate</label>
-  </div>
-  <div class="form-toppings">  
-    <input id="toppings2" type="checkbox" name="toppings" value="nuts"/>
-     <label for="toppings2" class="modal-toppings">Nuts</label>
-  </div>
-    <div class="form-toppings">  
-    <input id="toppings3" type="checkbox" name="toppings" value="syrup"/>
-     <label for="toppings3" class="modal-toppings">Syrup</label>
-  </div>
-<div class="form-toppings">  
-     <input id="toppings4" type="checkbox" name="toppings" value="caramel"/>
-     <label for="toppings4" class="modal-toppings">Caramel</label>
-</label>
-  </div>
-<div class="form-toppings">  
-    <input id="toppings5" type="checkbox" name="toppings" value="fruits"/>
-     <label for="toppings5" class="modal-toppings">Fruits</label>
-</label>
-  </div>
-      </div>   
-  </div>       
-    
-<div class="modal-form">
-          <label class="form__comment">
-            <span class="modal-size">Wishes</span>
-            <textarea
-              name="story"
-              rows="4"
-              class="form__area"
-              placeholder="What else do you want?"
-            ></textarea>
-          </label></div>
+          <div class="modal-form">
+            <p class="modal-size">Toppings</p>
+            <div class="modal-field">
+              <div class="form-toppings">
+                <input id="toppings1" type="checkbox" name="toppings" value="chokolate" />
+                <label for="toppings1" class="modal-toppings">Chokolate</label>
+              </div>
+              <div class="form-toppings">
+                <input id="toppings2" type="checkbox" name="toppings" value="nuts" />
+                <label for="toppings2" class="modal-toppings">Nuts</label>
+              </div>
+              <div class="form-toppings">
+                <input id="toppings3" type="checkbox" name="toppings" value="syrup" />
+                <label for="toppings3" class="modal-toppings">Syrup</label>
+              </div>
+              <div class="form-toppings">
+                <input id="toppings4" type="checkbox" name="toppings" value="caramel" />
+                <label for="toppings4" class="modal-toppings">Caramel</label>
+              </div>
+              <div class="form-toppings">
+                <input id="toppings5" type="checkbox" name="toppings" value="fruits" />
+                <label for="toppings5" class="modal-toppings">Fruits</label>
+              </div>
+            </div>
+          </div>
 
-          
+          <div class="modal-form">
+            <label class="form__comment">
+              <span class="modal-size">Wishes</span>
+              <textarea
+                name="story"
+                rows="4"
+                class="form__area"
+                placeholder="What else do you want?"
+              ></textarea>
+            </label>
+          </div>
+
           <button class="ice__btn" type="submit">ORDER</button>
         </form>
       </div>
