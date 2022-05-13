@@ -107,7 +107,11 @@ button.burger-menu-btn[aria-expanded='true'] {
 }
 
 .buy-now__btn {
-  cursor: pointer;
+    display: none;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 32px;
+cursor: pointer;
   background-color: $color-card;
   border-radius: 22px;
   width: 160px;
@@ -125,11 +129,7 @@ button.burger-menu-btn[aria-expanded='true'] {
   &:focus {
     background-color: $color-hover-light;
   }
-  @media screen and (max-width: 480px) {
-    display: none;
-  }
-  @media screen and (min-width: 768px) {
-    margin-left: 32px;
+
   }
   @media screen and (min-width: 1280px) {
     margin-left: 0px;
